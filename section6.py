@@ -11,3 +11,11 @@ def thing(integer):
     while True:
         m =m%12 + 1
         yield m
+
+# function to return the name of the next month
+def month(integer):
+    m = integer
+    d = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"]
+    while True:
+        m = m%12 + 1
+        yield d[m-1]
